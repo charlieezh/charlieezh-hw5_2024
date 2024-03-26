@@ -1,4 +1,5 @@
 @keyframes logoAnimation {
+    /*defining the animation*/
     from {
         width: 25px;
         opacity: 0;
@@ -66,9 +67,11 @@ header {
 .pricing {
     display: flex;
     flex-wrap: wrap;
+    /* Allows items to wrap onto multiple lines */
     align-content: center;
     justify-content: center;
     align-items: center;
+    /*center the cards vertically and horizontally*/
 }
 
 .gallery img {
@@ -94,11 +97,13 @@ header {
 @media screen and (min-width:900px) {
 header {
     flex-direction: row;
+    /*make the flex direction to be horizontal*/
     justify-content: space-between
 }
 
 .nav_links {
     flex-direction: row;
+    /*make the flex direction to be horizontal*/
 }
 
 .card {
@@ -107,7 +112,9 @@ header {
 
 body>header {
     position: fixed;
+    /*stick the header to the top of the page*/
     width: 100%;
+    /*align the header with the width of the whole viewport*/
 }
 
 }
@@ -115,11 +122,13 @@ body>header {
 @media screen and (prefers-reduced-motion: reduce) {
 header>img {
     animation: none;
+    /* Disable animation */
 }
 }
 
 @media print{
     body {
+        /* the font family used by the portrait */
         font-family: Arial, Helvetica, sans-serif;
         background-image: none;
     }
@@ -129,13 +138,10 @@ header>img {
         width: 100%;
     }
 
-    .nav_item {
-        align-items: space-around;
-    }
-
     .pricing{
         align-items: flex-end;
         flex-wrap: nowrap;
+        /* keep items in one single line*/
     }
 
     .card {
@@ -149,6 +155,7 @@ header>img {
 
     #gallery{
         display: none;
+        /*hide gallery */
     }
 
     .card li:nth-child(2)::after {
